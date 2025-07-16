@@ -4,6 +4,7 @@ from llama_cpp import Llama
 import json
 import re
 
+from mistral_local import demanar_json_a_model
 
 # Inicia el model (només una vegada)
 llm = Llama(model_path="./models/mistral-7b-instruct-v0.1.Q4_K_M.gguf", n_ctx=4096)
